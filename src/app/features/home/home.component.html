@@ -1,0 +1,7 @@
+<div class="personagem-list">
+    <app-cards *ngFor="let personagem of personagemService.personagens; index as i" 
+        [personagem]="personagem"
+        [numero]="i + 1"
+    >
+    </app-cards>
+</div>
